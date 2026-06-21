@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>DevOps Digital Clock</title>
+    <title>Rainbow Clock</title>
 
     <style>
         body{
@@ -10,25 +10,23 @@
             display:flex;
             justify-content:center;
             align-items:center;
-            background:#232F3E;
+            background:black;
         }
 
         #clock{
             font-size:100px;
             font-family:Arial, sans-serif;
             font-weight:bold;
-            color:#FF9900;
-            text-shadow:
-                0 0 10px #FF9900,
-                0 0 20px #FF9900,
-                0 0 40px #FF9900;
-            border:4px solid #FF9900;
-            padding:30px 50px;
-            border-radius:20px;
-            background:rgba(255,255,255,0.05);
-            box-shadow:
-                0 0 20px #FF9900,
-                0 0 40px rgba(255,153,0,0.5);
+            animation:rainbow 5s infinite;
+        }
+
+        @keyframes rainbow{
+            0%{color:red;}
+            20%{color:orange;}
+            40%{color:yellow;}
+            60%{color:green;}
+            80%{color:blue;}
+            100%{color:violet;}
         }
     </style>
 
