@@ -81,7 +81,7 @@ body{
 }
 
 .card img{
-    width:100%;
+    width:110%;
     height:250px;
     object-fit:cover;
 }
